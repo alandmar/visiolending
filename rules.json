@@ -1,0 +1,19 @@
+{
+   "rules": [
+	
+      {
+         "condition": "person.get_state() == 'Florida'",
+         "action": "product.set_disqualified(True)"
+      },
+      
+      {
+         "condition": "person.get_credit_score() >= 720 ",
+         "action": "product.set_interest_rate(product.get_interest_rate() - .3)"
+      },      
+	
+      {
+         "condition": "product.get_name() == '7-1 ARM'",
+         "action": "product.set_interest_rate(product.get_interest_rate() + .5)"
+      }
+   ]
+}
